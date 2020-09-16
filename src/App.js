@@ -1,24 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import LoginControl from "./container/loginControl";
+import IndexControl from "./container/indexControl";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./style.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/login" component={LoginControl} />
+          <Route exact path="/" component={IndexControl} />
+          <Route exact path="/posts/:id" component={SinglePost} />
+          <Route  path="*" component={()=> <h2 className="text-center m-5">404-Error Page Not Found. </h2>  } />
+        </Switch>
+      </BrowserRouter>
     </div>
   );
 }

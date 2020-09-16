@@ -1,0 +1,27 @@
+.login-wrapper{
+    width: 320px;
+    margin: auto;
+    margin-top: 10rem;
+    background:#f9f9f9;
+    padding: 1rem;
+    box-shadow: 0px 0px 10px #eee;
+}
+
+/*Categories*/
+
+.categories ,.latest-posts{
+    border:1px solid #eee;
+}
+
+/* post */
+.single-post{
+    border:1px solid #eee;
+    padding: 1rem;
+}
+.single-post h4{
+    text-transform: capitalize;
+    margin:.5rem auto;
+}
+.single-post p{
+    text-transform: capitalize;
+}
