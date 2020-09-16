@@ -25,3 +25,20 @@
 .single-post p{
     text-transform: capitalize;
 }
+
+/*Comments*/
+.comment-wrapper{
+    background: #f9f9f9;
+    padding: 2rem;
+}
+.single-comment{
+    padding-top:1rem;
+    border-bottom:1px solid #eee;
+}
+.comment-wrapper h6{
+    text-transform: capitalize;
+
+}
+.comment-wrapper p{
+    font-size:13px;
+}
